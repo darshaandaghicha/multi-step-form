@@ -36,10 +36,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-            <body className={`${customFont.variable} font-sans`}>
-                {children}
-            </body>
+        <html
+            lang="en"
+            className={customFont.variable}
+            suppressHydrationWarning={true}
+        >
+            <body className="font-sans">{children}</body>
         </html>
     );
 }
