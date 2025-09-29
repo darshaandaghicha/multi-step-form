@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import FormArea from './FormArea';
 import Sidebar from './Sidebar';
 
 const MultiStepForm = () => {
@@ -11,7 +12,12 @@ const MultiStepForm = () => {
             {/* Sidebar */}
             <Sidebar currentStep={currentStep} />
             {/* Form Area */}
-            <div className="flex-1 p-8">{/* Form content will go here */}</div>
+            <div className="flex-1 p-2">
+                <FormArea
+                    currentStep={currentStep}
+                    setCurrentStep={setCurrentStep}
+                />
+            </div>
         </div>
     );
 };
