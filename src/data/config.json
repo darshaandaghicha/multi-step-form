@@ -1,0 +1,23 @@
+{
+    "FREE_MONTHS": 2,
+    "PLANS": [
+        {
+            "id": "arcade",
+            "icon": "/icons/icon-arcade.svg",
+            "label": "Arcade",
+            "price": 9
+        },
+        {
+            "id": "advanced",
+            "icon": "/icons/icon-advanced.svg",
+            "label": "Advanced",
+            "price": 12
+        },
+        {
+            "id": "pro",
+            "icon": "/icons/icon-pro.svg",
+            "label": "Pro",
+            "price": 15
+        }
+    ]
+}
